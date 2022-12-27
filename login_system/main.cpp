@@ -64,7 +64,7 @@ int main(void)
             std::system("PAUSE");
             return 0;
         }
-        else1
+        else
         {
             std::cout << "Successfully Logged In" << std::endl;
             return 1;
