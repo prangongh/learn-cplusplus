@@ -1,7 +1,7 @@
 #pragma once
 
 #include <string>
-
+#include <iostream>
 class Car {
     private:
         std::string model;
@@ -13,4 +13,6 @@ class Car {
         std::string getModel();
         int getYear();
         int getRate();
+        friend bool operator==(const Car &c1, const Car &c2);
+        friend std::ostream &operator<<(std::ostream &os, const Car &c3);
 };
